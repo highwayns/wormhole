@@ -100,6 +100,7 @@ requestAnimationFrame(function() {
                 label: 'English',
                 nav: [
                     { text: "Top", link: "/" },
+                    { text: "Design", link: "/design/" },
                     {
                         text: "GitHub",
                         link: "https://github.com/highwayns/cosmos-sdk",
@@ -107,9 +108,19 @@ requestAnimationFrame(function() {
                     },
                 ],
                 sidebar: {
+                    "/design/": [
+                        "/design/",
+                        "/design/0001_generic_message_passing",
+                        "/design/0002_governance_messaging",
+                        "/design/0003_token_bridge",
+                        "/design/0004_message_publishing",
+                        "/design/0005_data_availability",
+                        "/design/0006_nft_bridge",
+                    ],
                     "/": [{
                         title: "Overview",
                         children: [
+                            "/DEVELOP",
                             "/assumptions",
                             "/devnet",
                             "/operations",
@@ -124,6 +135,7 @@ requestAnimationFrame(function() {
                 label: '简体中文',
                 nav: [
                     { text: "首页", link: "/zh/" },
+                    { text: "设计", link: "/zh/design/" },
                     {
                         text: "GitHub",
                         link: "https://github.com/highwayns/cosmos-sdk",
@@ -131,9 +143,19 @@ requestAnimationFrame(function() {
                     },
                 ],
                 sidebar: {
+                    "/zh/design/": [
+                        "/zh/design/",
+                        "/zh/design/0001_generic_message_passing",
+                        "/zh/design/0002_governance_messaging",
+                        "/zh/design/0003_token_bridge",
+                        "/zh/design/0004_message_publishing",
+                        "/zh/design/0005_data_availability",
+                        "/zh/design/0006_nft_bridge",
+                    ],
                     "/zh/": [{
                         title: "Overview",
                         children: [
+                            "/zh/DEVELOP",
                             "/zh/assumptions",
                             "/zh/devnet",
                             "/zh/operations",
@@ -148,6 +170,7 @@ requestAnimationFrame(function() {
                 label: '日本語',
                 nav: [
                     { text: "トップ", link: "/ja/" },
+                    { text: "設計", link: "/ja/design/" },
                     {
                         text: "GitHub",
                         link: "https://github.com/highwayns/cosmos-sdk",
@@ -155,9 +178,19 @@ requestAnimationFrame(function() {
                     },
                 ],
                 sidebar: {
+                    "/ja/design/": [
+                        "/ja/design/",
+                        "/ja/design/0001_generic_message_passing",
+                        "/ja/design/0002_governance_messaging",
+                        "/ja/design/0003_token_bridge",
+                        "/ja/design/0004_message_publishing",
+                        "/ja/design/0005_data_availability",
+                        "/ja/design/0006_nft_bridge",
+                    ],
                     "/ja/": [{
                         title: "Overview",
                         children: [
+                            "/ja/DEVELOP",
                             "/ja/assumptions",
                             "/ja/devnet",
                             "/ja/operations",

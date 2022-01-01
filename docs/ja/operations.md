@@ -22,7 +22,7 @@
   他の誰かの完全なノードに十分ですが、可用性についてはその単一のノードに依存します。
   ノードのセットを指すロードバランサーを設定します。
 
--** Binance Smart Chain **：イーサリアムと同じ要件。 BSCはイーサリアムよりもスループットが高いことに注意してください
+-** Binance Smart Chain **:イーサリアムと同じ要件。 BSCはイーサリアムよりもスループットが高いことに注意してください
   およそ2倍のコンピューティングリソースが必要です。
 
 **どのチェーンにもサードパーティのRPCサービスプロバイダーを使用しないでください**。あなたは彼らを完全に信頼するでしょう、そして彼らは嘘をつくことができます
@@ -50,7 +50,7 @@ Solana RPCノードでは、次のパラメーターを有効にする必要が�
 #### アカウントインデックス
 
 Wormhole v1に同じRPCノードを使用する場合は、速度を上げるために次の追加パラメーターも必要です。
-`getProgramAccount`クエリ： 
+`getProgramAccount`クエリ: 
 
 ```
 [... see above for other required parameters ...]
@@ -121,7 +121,7 @@ make node
 
 ローカルでコンパイルしてデプロイする場合は、 `sudo make install`を実行して、バイナリを/usr/local/binにインストールできます。
 
-カスタムパイプラインを使用してデプロイする場合は、バイナリに `CAP_IPC_LOCK`機能を設定する必要があります(例：
+カスタムパイプラインを使用してデプロイする場合は、バイナリに `CAP_IPC_LOCK`機能を設定する必要があります(例:
 `sudo setcap cap_ipc_lock = + ep`)と同等であり、メモリページをロックしてページアウトを防止します。
 理由については、以下を参照してください-これは、プロセスメモリがスワップアウトされないことを保証する一般的な多層防御の緩和策です
 ディスクに。この追加機能が運用上またはコンプライアンス上の懸念を表す場合は、GitHubの問題を作成してください。
@@ -129,7 +129,7 @@ make node
 ## キーの生成
 
 ガーディアンキーを生成するには、最初にguardiandをインストールします。別のマシンでキーを生成する場合は、
-それをインストールせずにのみguardiandをコンパイルします： 
+それをインストールせずにのみguardiandをコンパイルします: 
 
     make node
     sudo setcap cap_ipc_lock=+ep ./build/bin/guardiand
@@ -164,7 +164,7 @@ Kubernetesのデプロイは完全にサポートされています。
 ### モニタリング
 
 ワームホールは、準備とメトリックのためにステータスサーバーを公開します。デフォルトでは、ローカルホストのポート6060でリッスンします。
-コマンドライン引数を使用して、公開することができます： `--statusAddr = [::]：6060`。
+コマンドライン引数を使用して、公開することができます: `--statusAddr = [::]:6060`。
 
 #### `/readyz`
 
@@ -185,7 +185,7 @@ Kubernetesのデプロイは完全にサポートされています。
 
 Grafanaダッシュボードの例については、[Wormhole.json](../dashboards/Wormhole.json)を参照してください。
 
-**注：**監視のためにログ出力を解析することはお勧めしません。ログ出力は人間が消費するためのものであり、
+**注:**監視のためにログ出力を解析することはお勧めしません。ログ出力は人間が消費するためのものであり、
 安定したAPIとは見なされません。ログメッセージは、予告なしに追加、変更、または削除される場合があります。メトリックを使用します:-)
 
 ## パブリックAPIエンドポイントの実行
@@ -220,8 +220,8 @@ Webウォレットで使用するには、TLSをサポートする必要があ�
 guardiandは、オプションで、ポート443への非特権バインディングのsystemdソケットアクティベーションをサポートし、再起動します
 最小限のダウンタイムで。
 
-`--publicWeb`エンドポイントの前に` sd： `を付けることで有効にできます。 その後、guardiandは指定されたものを使用します
-systemdによって提供されるソケット(例： `--publicWeb = sd：[::]：443`)。
+`--publicWeb`エンドポイントの前に` sd: `を付けることで有効にできます。 その後、guardiandは指定されたものを使用します
+systemdによって提供されるソケット(例: `--publicWeb = sd:[::]:443`)。
 
 メインの `guardiand.service`にバインドされた2番目のsystemdユニットが必要です。 
 
@@ -236,17 +236,17 @@ Service=guardiand.service
 WantedBy=sockets.target
 ```
 
-...そしてそれを有効にします： `systemctl enable--nowguardiand-web.socket`。 `guardiand.service`も再起動する必要があります。
+...そしてそれを有効にします: `systemctl enable--nowguardiand-web.socket`。 `guardiand.service`も再起動する必要があります。
 
 ### 特権ポートへのバインド
 
 上記のようにソケットアクティベーションを使用せずに `--publicWeb`を1024未満のポートにバインドする場合は、次のように割り当てる必要があります。
 CAP_NET_BIND_SERVICE機能。 これは、バイナリに機能を追加することで実現できます
-(非システム環境のように)： 
+(非システム環境のように): 
 
      sudo setcap cap_net_bind_service=+ep guardiand
 
-...または `guardiand.service`で設定された機能を拡張することによって： 
+...または `guardiand.service`で設定された機能を拡張することによって: 
 
     AmbientCapabilities=CAP_IPC_LOCK CAP_NET_BIND_SERVICE
     CapabilityBoundingSet=CAP_IPC_LOCK CAP_NET_BIND_SERVICE
