@@ -121,6 +121,7 @@ requestAnimationFrame(function() {
                         title: "Overview",
                         children: [
                             "/DEVELOP",
+                            "/CONTRIBUTING",
                             "/assumptions",
                             "/devnet",
                             "/operations",
@@ -156,6 +157,7 @@ requestAnimationFrame(function() {
                         title: "Overview",
                         children: [
                             "/zh/DEVELOP",
+                            "/zh/CONTRIBUTING",
                             "/zh/assumptions",
                             "/zh/devnet",
                             "/zh/operations",
@@ -191,6 +193,7 @@ requestAnimationFrame(function() {
                         title: "Overview",
                         children: [
                             "/ja/DEVELOP",
+                            "/ja/CONTRIBUTING",
                             "/ja/assumptions",
                             "/ja/devnet",
                             "/ja/operations",

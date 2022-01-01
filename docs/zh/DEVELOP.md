@@ -5,7 +5,7 @@
 本地开发需要以下依赖:
 
 - [Go](https://golang.org/dl/) >= 1.17.0
-- [倾斜](http://tilt.dev/) >= 0.20.8
+- [Tilt](http://tilt.dev/) >= 0.20.8
 - Tilt 支持的任何本地 Kubernetes 集群。
    我们强烈推荐 [minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/) >=
    v1.21.0 带有 kvm2 驱动程序。
@@ -55,7 +55,7 @@ minikube 默认太低了，这样调整:
     kubectl delete pod guardian-0
 
 调整正在运行的集群中的节点数:(这仅在您想测试节点数
-的节点与监护人集不同 - 否则，`向下倾斜 --delete-namespaces` 并重新启动集群)
+的节点与监护人集不同 - 否则，`向下Tilt --delete-namespaces` 并重新启动集群)
 
     tilt args -- --num=2
 
