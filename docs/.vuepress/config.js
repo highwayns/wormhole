@@ -101,6 +101,12 @@ requestAnimationFrame(function() {
                 nav: [
                     { text: "Top", link: "/" },
                     { text: "Design", link: "/design/" },
+                    { text: "SDK", link: "/sdk/" },
+                    { text: "Bridge UI", link: "/bridge_ui/" },
+                    { text: "LP UI", link: "/lp_ui/" },
+                    { text: "Explorer", link: "/explorer/" },
+                    { text: "Event Database", link: "/event_database/" },
+                    { text: "Ethereum", link: "/ethereum/" },
                     {
                         text: "GitHub",
                         link: "https://github.com/highwayns/cosmos-sdk",
@@ -116,6 +122,24 @@ requestAnimationFrame(function() {
                         "/design/0004_message_publishing",
                         "/design/0005_data_availability",
                         "/design/0006_nft_bridge",
+                    ],
+                    "/sdk/": [
+                        "/sdk/",
+                    ],
+                    "/bridge_ui/": [
+                        "/bridge_ui/",
+                    ],
+                    "/lp_ui/": [
+                        "/lp_ui/",
+                    ],
+                    "/explorer/": [
+                        "/explorer/",
+                    ],
+                    "/event_database/": [
+                        "/event_database/",
+                    ],
+                    "/ethereum/": [
+                        "/ethereum/",
                     ],
                     "/": [{
                         title: "Overview",
@@ -137,6 +161,12 @@ requestAnimationFrame(function() {
                 nav: [
                     { text: "首页", link: "/zh/" },
                     { text: "设计", link: "/zh/design/" },
+                    { text: "SDK", link: "/zh/sdk/" },
+                    { text: "Bridge UI", link: "/zh/bridge_ui/" },
+                    { text: "LP UI", link: "/zh/lp_ui/" },
+                    { text: "Explorer", link: "/zh/explorer/" },
+                    { text: "Event Database", link: "/zh/event_database/" },
+                    { text: "Ethereum", link: "/zh/ethereum/" },
                     {
                         text: "GitHub",
                         link: "https://github.com/highwayns/cosmos-sdk",
@@ -152,6 +182,24 @@ requestAnimationFrame(function() {
                         "/zh/design/0004_message_publishing",
                         "/zh/design/0005_data_availability",
                         "/zh/design/0006_nft_bridge",
+                    ],
+                    "/zh/sdk/": [
+                        "/zh/sdk/",
+                    ],
+                    "/zh/bridge_ui/": [
+                        "/zh/bridge_ui/",
+                    ],
+                    "/zh/lp_ui/": [
+                        "/zh/lp_ui/",
+                    ],
+                    "/zh/explorer/": [
+                        "/zh/explorer/",
+                    ],
+                    "/zh/event_database/": [
+                        "/zh/event_database/",
+                    ],
+                    "/zh/ethereum/": [
+                        "/zh/ethereum/",
                     ],
                     "/zh/": [{
                         title: "Overview",
@@ -173,6 +221,12 @@ requestAnimationFrame(function() {
                 nav: [
                     { text: "トップ", link: "/ja/" },
                     { text: "設計", link: "/ja/design/" },
+                    { text: "SDK", link: "/ja/sdk/" },
+                    { text: "Bridge UI", link: "/ja/bridge_ui/" },
+                    { text: "LP UI", link: "/ja/lp_ui/" },
+                    { text: "Explorer", link: "/ja/explorer/" },
+                    { text: "Event Database", link: "/ja/event_database/" },
+                    { text: "Ethereum", link: "/ja/ethereum/" },
                     {
                         text: "GitHub",
                         link: "https://github.com/highwayns/cosmos-sdk",
@@ -188,6 +242,24 @@ requestAnimationFrame(function() {
                         "/ja/design/0004_message_publishing",
                         "/ja/design/0005_data_availability",
                         "/ja/design/0006_nft_bridge",
+                    ],
+                    "/ja/sdk/": [
+                        "/ja/sdk/",
+                    ],
+                    "/ja/bridge_ui/": [
+                        "/ja/bridge_ui/",
+                    ],
+                    "/ja/lp_ui/": [
+                        "/ja/lp_ui/",
+                    ],
+                    "/ja/explorer/": [
+                        "/ja/explorer/",
+                    ],
+                    "/ja/event_database/": [
+                        "/ja/event_database/",
+                    ],
+                    "/ja/ethereum/": [
+                        "/ja/ethereum/",
                     ],
                     "/ja/": [{
                         title: "Overview",
